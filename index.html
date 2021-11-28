@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <form action="" method="post">
+            <div class="all-elements">
+                <h2>Contact Us</h2>
+                <div>
+                    <!-- <label for="name">Input Your Name</label> -->
+                    <input type="text" name="name" id="" placeholder="Input Your Name" required>
+                </div>
+                <div>
+                    <!-- <label for="name">Input Your Email</label> -->
+                    <input type="email" name="email" id="" placeholder="Input Your Email" required>
+                </div>
+
+                <div class="file-input">
+                    <input type="file" id="file" class="file" name="attachment" accept="image/png, image/jpeg" multiple>
+                    <label for="file">
+                        Select file
+                        <p class="file-name"></p>
+                    </label>
+                </div>
+        
+                <div>
+                    <label for="message" class="message">Message</label>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="tell us something" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">SEND</button>
+            </div>
+        </form>
+    </section>
+    
+   
+    <script src="./app.js"></script>
+</body>
+</html>

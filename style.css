@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100'); 
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+section .all-elements{
+    background: rgba(255,255,255,0.4);
+    padding: 60px;
+    margin: auto;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    
+    /* border: 1px solid rgba(255,255,255,0.4); */
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
+    z-index: 10000;
+    outline: none;
+    border-radius: 140px 0;
+}
+
+.all-elements h2{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Monserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+input{
+  position: relative;
+  font-size: 0.9rem;
+  display: inline-block;
+  height: 28px;
+  width: 80%;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: -webkit-linear-gradient(#edc0bf, #c4caef);
+  color:#fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+input:after{
+    content: '';
+    background: -webkit-linear-gradient(#edc0bf, #c4caef);
+    color:#fff;
+}
+
+.all-elements label{
+    position: relative;
+    font-size: 1.7rem;
+    display: inline-block;
+    font-weight: bolder;
+    padding: 0.5rem 0;
+    color: #fff;
+}
+.message{
+  margin-top: -12px;
+}
+
+/* style for input file upload  start here */
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+    bottom: -1.5rem;
+  }
+  .file-input{
+      margin-top: 27px;
+      left: 30px;
+      position: relative;
+  }
+  
+  .file-input label {
+    display: block;
+    position: relative;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #edc0bf 38%,#c4caef 68%);
+    /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+    bottom: 1.5rem;
+    font-size: 20px;
+    width: 80%;
+    outline: none;
+    padding: 0.5rem 3.8rem;
+    text-transform: capitalize;
+    z-index: 10;
+  }
+  
+  input:hover + label,
+  input:focus + label {
+    transform: scale(1.02);
+  }
+  .file-name {
+    position: absolute;
+    top: 2.5rem;
+    left: 10px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+/* style for input file upload  end here */
+
+textarea{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: 150px;
+    resize: vertical;
+    padding: 1rem;
+    outline: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: none;
+    background: -webkit-linear-gradient(#edc0bf, #c4caef);
+    color:#fff;
+    margin-top: 5px;
+  }
+  .submit-btn{
+    color: #fff;
+    margin-top: 2rem;
+    position: relative;
+    bottom: 18px;
+    text-transform: uppercase;
+    padding: 8px 32px;
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #edc0bf 38%,#c4caef 68%);
+    z-index: 1000;
+  }
+  ::placeholder{
+      color: white;
+      font-weight: bolder;
+  }
+
+  section .all-elements:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg, #edc0bf 38%,#c4caef 68%);
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 50px;
+}
